@@ -7,9 +7,6 @@ export const metadata = {
   description: 'A platform for developers to share programming knowledge',
 };
 
-
-
-
 export default async function WelcomePage() {
   const session = await auth(); 
   if (session) { redirect("/home"); }
